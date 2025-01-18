@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["shipping.local", "localhost", "https://shipping.local"]
 
+CSRF_TRUSTED_ORIGINS = ["shipping.local", "localhost", "https://shipping.local"]
 
 # Application definition
 
