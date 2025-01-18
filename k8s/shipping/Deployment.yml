@@ -4,7 +4,7 @@ metadata:
   name: shipping-app
   namespace: shipping
 spec:
-  # replicas: 2 # updated 2 for HA
+  replicas: 2 # updated 2 for HA
   selector:
     matchLabels:
       app: shipping-app
