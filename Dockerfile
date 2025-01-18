@@ -22,9 +22,9 @@ RUN python manage.py makemigrations && python manage.py migrate
 # Expose the application port
 EXPOSE 8000
 
-# Use a non-root user for better security
-RUN useradd --create-home appuser
-USER appuser
+# # Use a non-root user for better security
+# RUN useradd --create-home appuser
+# USER appuser
 
 # Define the default command
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
