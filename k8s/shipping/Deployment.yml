@@ -36,11 +36,11 @@ spec:
             readOnlyRootFilesystem: true
             capabilities:
               drop: ["ALL"]
-              # envFrom:
-              #   - configMapRef:
-              #       name: smart-health-configmap
-              #   - secretRef:
-              #       name: smart-health-secret
+              envFrom:
+                - configMapRef:
+                    name: shipping-configmap
+                - secretRef:
+                    name: shipping-secret
   strategy:
     type: RollingUpdate
     rollingUpdate:
