@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: shipping-app-container
-          image: errorhunter/shipping-managment-system:c62b651823293211c3f8fa7e00d14b954dfd4d1e
+          image: errorhunter/shipping-managment-system:90acf2613fa807e93d2748d1262f691bf47434f4
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
