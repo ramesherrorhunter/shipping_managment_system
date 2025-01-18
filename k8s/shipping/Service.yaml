@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: smart-health-app
+    app: shipping-app
   ports:
     - protocol: TCP
       port: 80  

@@ -1,10 +1,10 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: domain-local-cert-tls  #domain-local-cert
+  name: domain-local-shipping-cert-tls #domain-local-cert
   namespace: shipping
 spec:
-  secretName: domain-local-cert-tls
+  secretName: domain-local-shipping-cert-tls
   duration: 24h
   renewBefore: 12h
   commonName: shipping.local
