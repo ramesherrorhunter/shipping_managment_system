@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: shipping-app-container
-          image: errorhunter/smart-health-monitoring-app:c1307f6a8325bc06e1114f19f47e16d8c4297b29
+          image: errorhunter/shipping-managment-system:5371a1efb2952e84a71389ad0fa43c0092256cac
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
@@ -36,11 +36,11 @@ spec:
             readOnlyRootFilesystem: true
             capabilities:
               drop: ["ALL"]
-          # envFrom:
-          #   - configMapRef:
-          #       name: smart-health-configmap
-          #   - secretRef:
-          #       name: smart-health-secret
+              # envFrom:
+              #   - configMapRef:
+              #       name: smart-health-configmap
+              #   - secretRef:
+              #       name: smart-health-secret
   strategy:
     type: RollingUpdate
     rollingUpdate:
